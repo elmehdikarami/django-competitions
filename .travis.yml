@@ -9,5 +9,5 @@ install:
 # command to run tests
 script:
   - python manage.py test
-  - coverage run manage.py test
+  - coverage run manage.py test addresses events galleries games groups players positions seasons statustics teams tournaments
 after_success: coveralls
