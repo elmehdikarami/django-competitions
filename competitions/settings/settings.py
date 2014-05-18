@@ -3,7 +3,7 @@
 # @Author: Karami El Mehdi
 # @Date:   2014-05-01 00:11:02
 # @Last Modified by:   elmehdikarami
-# @Last Modified time: 2014-05-18 14:36:56
+# @Last Modified time: 2014-05-18 14:50:47
 # Django settings for competitions project.
 import os
 import sys
@@ -17,7 +17,6 @@ ADMINS = (
 )
 
 PROJECT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
-print PROJECT_DIR
 
 MANAGERS = ADMINS
 
