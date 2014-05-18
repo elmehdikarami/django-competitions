@@ -3,9 +3,12 @@
 # @Author: Karami El Mehdi
 # @Date:   2014-05-01 00:10:25
 # @Last Modified by:   elmehdikarami
-# @Last Modified time: 2014-05-01 12:17:47
+# @Last Modified time: 2014-05-18 15:36:37
 from .settings import *
-from .local import SECRET_KEY
+try:
+    from .local import SECRET_KEY
+except ImportError:
+    SECRET_KEY = "It's secret !"
 
 try:
     from .prod import *
