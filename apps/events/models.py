@@ -3,7 +3,7 @@
 # @Author: Karami El Mehdi
 # @Date:   2014-03-30 23:26:09
 # @Last Modified by:   elmehdikarami
-# @Last Modified time: 2014-05-01 01:28:29
+# @Last Modified time: 2014-05-18 11:21:45
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
 
