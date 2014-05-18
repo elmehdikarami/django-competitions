@@ -8,6 +8,6 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - python manage.py test
-  - coverage run manage.py test addresses events galleries games groups players positions seasons statustics teams tournaments
+  - python manage.py test addresses events galleries games groups players positions seasons statistics teams tournaments
+  - coverage run manage.py test addresses events galleries games groups players positions seasons statistics teams tournaments
 after_success: coveralls
