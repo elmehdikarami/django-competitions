@@ -58,3 +58,4 @@ reports/
 static/
 *.sqlite3
 local.py
+galleries/

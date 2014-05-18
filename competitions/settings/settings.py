@@ -3,9 +3,11 @@
 # @Author: Karami El Mehdi
 # @Date:   2014-05-01 00:11:02
 # @Last Modified by:   elmehdikarami
-# @Last Modified time: 2014-05-01 12:17:10
+# @Last Modified time: 2014-05-18 14:36:56
 # Django settings for competitions project.
+import os
 import sys
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -13,6 +15,9 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
+
+PROJECT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+print PROJECT_DIR
 
 MANAGERS = ADMINS
 
@@ -166,5 +171,5 @@ LOGGING = {
 
 
 # ---- Gellery Settings -------
-IMAGES_STORE = 'galleries/'
-THUMB_STORE = '/galleries/thumb/'
+IMAGES_STORE = os.path.join(PROJECT_DIR, 'galleries')
+THUMB_STORE = os.path.join(IMAGES_STORE, 'thumbs')
