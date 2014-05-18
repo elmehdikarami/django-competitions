@@ -3,6 +3,8 @@ python:
   - "2.6"
   - "2.7"
 # command to install dependencies
-install: "pip install -r conf/requirements.txt"
+install:
+  - "pip install -r conf/requirements.txt"
 # command to run tests
-script: python manage.py test
+script:
+  - python manage.py test
